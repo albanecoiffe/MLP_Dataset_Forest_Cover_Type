@@ -1,5 +1,7 @@
 # Lab : Classification Multi-Classes avec scikit-learn MLPClassifier sur le Dataset Forest Cover Type 🌲   
 
+[Notebook](https://albanecoiffe.github.io/MLP_Dataset_Forest_Cover_Type/)   
+
 ## 🎯 Objectif :   
 Dans ce laboratoire, vous allez implémenter un modèle de `Multi-Layer Perceptron (MLP)` en utilisant scikit-learn pour classifier les différents types de couvertures forestières.    
 Les étapes de profiling des données et de prétraitement ont déjà été effectuées dans un laboratoire précédent.
