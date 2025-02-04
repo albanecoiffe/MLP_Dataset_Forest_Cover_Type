@@ -2,31 +2,39 @@
 
 [Notebook](https://albanecoiffe.github.io/MLP_Dataset_Forest_Cover_Type/)   
 
-## 🎯 Objectif :   
-Dans ce laboratoire, vous allez implémenter un modèle de `Multi-Layer Perceptron (MLP)` en utilisant scikit-learn pour classifier les différents types de couvertures forestières.    
-Les étapes de profiling des données et de prétraitement ont déjà été effectuées dans un laboratoire précédent.
+## 🎯 Objective
+In this lab, you will implement a `Multi-Layer Perceptron (MLP)` model using scikit-learn to classify different forest cover types.
+The data profiling and preprocessing steps have already been completed in a previous lab.
 
-## 🛠️ Étapes
+## 🛠️ Steps    
+1. Data Preprocessing (Completed in a Previous Lab)     
+  - Normalization of data using StandardScaler.
+  - Encoding target labels with One-Hot Encoding.
+  - Splitting the dataset into training (80%) and testing (20%) sets.
 
-**Prétraitement des Données (réalisé dans un lab précédent) :**
-- Normalisation des données avec StandardScaler.
-- Encodage des labels cibles avec One-Hot Encoding.
-- Division des données en ensembles d'entraînement et de test (80/20).
+2. MLP Model Construction
+  - Using MLPClassifier from scikit-learn.
+  - Architecture:
+      - 2 hidden layers with 128 and 64 neurons respectively.
+      - Activation function: ReLU.
+      - Optimizer: Adam.
 
-**Construction du Modèle MLP :**
-- Utilisation du MLPClassifier de scikit-learn.
-- Architecture : 2 couches cachées avec 128 et 64 neurones respectivement, activation ReLU, optimiseur Adam.
+4. Model Training     
+  - Training the model on the training dataset (no need for one-hot encoding of labels).
 
-**Entraînement du Modèle :**
-- Ajustement du modèle sur l'ensemble d'entraînement sans besoin d'encodage des labels en one-hot.
+5. Model Evaluation
+  - Predicting labels on the test set.
+  - Generating evaluation metrics:
+  - Accuracy
+  - Confusion matrix
+  - Classification report
 
-**Évaluation du Modèle :**
-- Prédiction des labels sur l'ensemble de test.
-- Génération de métriques d'évaluation : précision, matrice de confusion, rapport de classification.
+6. Confusion Matrix Visualization
+  - Displaying the confusion matrix as a heatmap to better understand model performance.
 
-**Visualisation de la Matrice de Confusion :**
-- Affichage de la matrice de confusion sous forme de heatmap pour mieux comprendre les performances du modèle.
-
-**Expérimentation avec les Hyperparamètres :**
-- Exploration de l'impact des hyperparamètres tels que le nombre de couches cachées, le taux d'apprentissage et la régularisation sur les performances du modèle.
-
+7. Hyperparameter Tuning
+  - Exploring the impact of hyperparameters such as:
+      - Number of hidden layers
+      - Learning rate
+      - Regularization
+      - Evaluating their effect on model performance.
